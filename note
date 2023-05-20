@@ -1,0 +1,12 @@
+a list of buttons  which contains the categories,
+a 
+Get an array of pictures
+get an array of sounds
+get an image
+get a button
+
+homepage has list of moods user can select,
+user selects mood,
+a picture is displayed with matching music.  
+
+map through the array, compare the data.name with the mood, if correct, display the data.pic and play the sound. 

@@ -36,3 +36,148 @@
     transform: rotate(360deg);
   }
 }
+
+.fade-in-image{
+  animation: fadeIn 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.header{
+  text-align: left;
+  margin-left: 20px;
+  /* border-bottom: #282c34; */
+}
+
+#mood-img{
+  position: absolute;
+  width: 100vw;
+  z-index: -5;
+  /* height: 100vh; */
+}
+
+.main-container{
+  width: 100vw;
+  display: flex;
+
+}
+
+.controls-container{
+  width: 15%;
+  margin-right: 10%;
+  margin-left: 1%;
+  background-color: antiquewhite;
+  /* flex-direction: column; */
+}
+
+.mood-container{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 1px 8px 50px gray;
+  border-radius: 10px;
+}
+
+.img-container{
+  width: 70%;
+  height: 70vh;
+  margin-right: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  animation: zoom-in-zoom-out 50s linear infinite;
+  
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+/* .animate {
+  animation-duration: 20s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+  
+  
+
+
+.container{
+  height: 100vh;
+  width: 100vw;
+}
+.mood-btn{
+  background: rgba(255, 255, 255, .5);
+  border: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mood-btn:hover{
+
+}
+.mood-btn:hover{
+  background: rgba(255, 255, 255, .9);
+}
+
+.audio-control{
+  margin-top: 70px;
+}
+
+.control-btn{
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 1%;
+  width: 11%;
+}
+
+.control-btn-container{
+  text-align: right;
+}
